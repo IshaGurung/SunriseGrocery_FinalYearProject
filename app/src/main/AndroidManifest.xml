@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sunrisegrocery">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SunriseGrocery"
+        tools:replace="android:theme">
+        <activity
+            android:name=".admin.ActivityOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".order.orderDetails.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".order.orderDetails.OrderHistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar"/>
+        <activity
+            android:name=".order.orderDetails.OrderDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar"/>
+        <activity
+            android:name=".home.fragments.more.AboutUsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar" />
+        <activity
+            android:name=".home.fragments.more.ContactUsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar" />
+        <activity
+            android:name=".home.fragments.more.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar" />
+        <activity
+            android:name=".home.fragments.home.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.addCategory.ListCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.addProduct.SelectCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.addProduct.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.products.ListProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.fragments.home.SearchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar" />
+        <activity
+            android:name=".checkout.address.AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".checkout.address.AddNewAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".checkout.orderCompleted.OrderCompleteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar" />
+        <activity
+            android:name=".checkout.CheckOutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar"/>
+        <activity
+            android:name=".singleProductpage.SingleProductActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar" />
+        <activity
+            android:name=".categoryActivity.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.AnotherActivity"
+            android:exported="false"
+            android:parentActivityName=".home.MainActivity"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar" />
+        <activity
+            android:name=".userAccount.UserAccountActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunriseGrocery1.NOActionBar" />
+        <activity
+            android:name=".SplashScreen.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar">
+
+            <!-- android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SunriseGrocery.NOActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.isha.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

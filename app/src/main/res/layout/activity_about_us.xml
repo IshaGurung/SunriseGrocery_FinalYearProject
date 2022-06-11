@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".home.fragments.more.AboutUsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor">
+
+            <ImageView
+                android:id="@+id/backIV"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="5dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_round_arrow_back_ios_new_24"
+                app:tint="@color/priceGray" />
+
+
+            <ImageView
+                android:id="@+id/aboutusbackIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/large_spacing"
+                android:layout_marginTop="@dimen/large_spacing"
+                android:layout_marginEnd="@dimen/large_spacing"
+                android:layout_marginBottom="@dimen/large_spacing"
+                android:elevation="20dp"
+                app:tint="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="About Us"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-400dp"
+
+        android:layout_marginTop="5dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginEnd="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="54dp"
+                android:text="About Us"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/normal_spacing"
+                android:layout_marginEnd="25dp"
+                android:justificationMode="inter_word"
+                android:text="Sunrise Grocery is reliable and effortlessly convenient online shopping store in Pokhara. It specialize in the imperative part of our life, grocery. With more people learning towards digital shopping from the comfort of their own devices. We strive to serve them with the easiest method of getting essentials to their doorstep. "
+                android:textColor="@color/priceGray"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/normal_spacing"
+                android:text="OUR MISSION"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/normal_spacing"
+                android:layout_marginEnd="25dp"
+                android:justificationMode="inter_word"
+                android:text="Our Mission is to provide best shopping experience by the reducing chaos in the shopping and attain the utmost customer satisfaction with promised products at affordable price rate."
+                android:textColor="@color/priceGray"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
